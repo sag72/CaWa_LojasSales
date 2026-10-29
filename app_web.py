@@ -158,9 +158,12 @@ def tab_only_on_request():
 
 
 def main():
-    st.set_page_config(page_title="Lojas SALES (CAWA)", page_icon="🛒", layout="wide")
-    st.title("🛒 Lojas SALES — CAWA XML Manager")
-    st.caption("Corre no teu browser (nada é enviado para servidores).")
+    st.set_page_config(page_title="Migração do application de vendas de EAI para MFT", page_icon="🛒", layout="wide")
+    st.title("🛒 Migração do application de vendas de EAI para MFT")
+    st.caption(
+        "Corre no teu navegador (nada é enviado para servidores). Adiciona ou retira lojas nos "
+        "processos de vendas (SALES) e coloca lojas em \"Only on request\" a partir de um ficheiro CSV."
+    )
     t1, t2 = st.tabs(["Adicionar / remover lojas", "Only on request"])
     with t1:
         tab_lojas()
